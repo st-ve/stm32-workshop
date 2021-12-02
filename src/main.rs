@@ -34,9 +34,9 @@ const WHITE: RGB8 = RGB8 { r: 5, g: 5, b: 5 };
 
 fn setup_pins() {
     // Configure pins for Spi
-    let _sck = Pin::new(Port::A, 0, PinMode::Alt(0));
-    let _miso = Pin::new(Port::A, 3, PinMode::Alt(0));
-    let _mosi = Pin::new(Port::A, 10, PinMode::Alt(0));
+    let _sck = Pin::new(Port::B, 13, PinMode::Alt(5));
+    let _miso = Pin::new(Port::B, 14, PinMode::Alt(5));
+    let _mosi = Pin::new(Port::B, 15, PinMode::Alt(5));
 }
 
 #[entry]
