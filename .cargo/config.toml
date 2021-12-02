@@ -4,9 +4,9 @@
 # runner = "probe-run --chip STM32F302R8Tx"
 # runner = "probe-run --chip STM32F303RETx"
 # runner = "probe-run --chip STM32F410RBTx"
-# runner = "probe-run --chip STM32F411RETx"
+runner = "probe-run --chip STM32F411RETx"
 # runner = "probe-run --chip STM32F446RETx"
-runner = "probe-run --chip STM32G071RBTx"
+# runner = "probe-run --chip STM32G071RBTx"
 
 rustflags = [
   "-C", "linker=flip-link",
@@ -19,8 +19,8 @@ rustflags = [
 
 [build]
 # Change this target as required for your MCU.
-# target = "thumbv7em-none-eabihf" # Cortex-M4F and Cortex-M7F (eg F, L4, H7)
-target = "thumbv6m-none-eabi"    # Cortex-M0 and Cortex-M0+ (eg G)
+target = "thumbv7em-none-eabihf" # Cortex-M4F and Cortex-M7F (eg F, L4, H7)
+# target = "thumbv6m-none-eabi"    # Cortex-M0 and Cortex-M0+ (eg G)
 
 [alias]
 rb = "run --bin"

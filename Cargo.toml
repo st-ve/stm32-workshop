@@ -23,9 +23,9 @@ branch = "combined-fixes"
 # features = ["embedded-hal", "f302", "f3rt"]
 # features = ["embedded-hal", "f303", "f3rt"]
 # features = ["embedded-hal", "f410", "f4rt"]
-# features = ["embedded-hal", "f411", "f4rt"]
+features = ["embedded-hal", "f411", "f4rt"]
 # features = ["embedded-hal", "f446", "f4rt"]
-features = ["embedded-hal", "g0b1", "g0rt"]
+# features = ["embedded-hal", "g0b1", "g0rt"]
 
 # cargo build/run
 [profile.dev]
